@@ -383,11 +383,18 @@ function AboutSection() {
         </p>
 
         {/* Profile Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-12">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-12">
           {coFoundersData.map((founder) => (
             <CoFounderCard key={founder.id} founder={founder} />
           ))}
-        </div>
+        </div> */}
+
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {teamMembers.map((member, i) => (
+          <TeamMemberCard key={i} member={member} />
+        ))}
+      </div>
+      
       </section>
 
       {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
