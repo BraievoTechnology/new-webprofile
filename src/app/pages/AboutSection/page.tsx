@@ -1,6 +1,7 @@
 "use client";
 import CoFounderCard from "@/components/CoFounderCard";
 import Navbar from "@/components/Navbar";
+import PrimaryButton from "@/components/PrimaryButton";
 import ProfileCard, { Profile } from "@/components/ProfileCard";
 import RotatingButton from "@/components/RotatingButton";
 import StatCard from "@/components/StatCard";
@@ -9,8 +10,6 @@ import { CoFounder } from "@/components/types";
 import React from "react";
 import { useState } from "react";
 import { FiInstagram, FiLinkedin, FiFacebook } from "react-icons/fi";
-
-
 
 function AboutSection() {
   const stats = [
@@ -31,7 +30,8 @@ function AboutSection() {
       id: 1,
       name: "Kaveeja Sachintha Perera",
       role: "Full-stack Developer",
-      imageUrl: "https://www.trinitycollege.edu/wp-content/uploads/2023/03/Mens4-scaled.jpg",
+      imageUrl:
+        "https://www.trinitycollege.edu/wp-content/uploads/2023/03/Mens4-scaled.jpg",
       socials: [
         { name: "instagram", url: "#" },
         { name: "linkedin", url: "#" },
@@ -42,7 +42,8 @@ function AboutSection() {
       id: 2,
       name: "Kaveeja Sachintha Perera",
       role: "Full-stack Developer",
-      imageUrl: "https://www.trinitycollege.edu/wp-content/uploads/2023/03/Mens4-scaled.jpg",
+      imageUrl:
+        "https://www.trinitycollege.edu/wp-content/uploads/2023/03/Mens4-scaled.jpg",
       socials: [
         { name: "instagram", url: "#" },
         { name: "linkedin", url: "#" },
@@ -53,7 +54,8 @@ function AboutSection() {
       id: 3,
       name: "Kaveeja Sachintha Perera",
       role: "Full-stack Developer",
-      imageUrl: "https://www.trinitycollege.edu/wp-content/uploads/2023/03/Mens4-scaled.jpg",
+      imageUrl:
+        "https://www.trinitycollege.edu/wp-content/uploads/2023/03/Mens4-scaled.jpg",
       socials: [
         { name: "instagram", url: "#" },
         { name: "linkedin", url: "#" },
@@ -88,67 +90,73 @@ function AboutSection() {
   ];
 
   const teamMembers = [
-  {
-    name: 'Kaveeja Sachintha Perera',
-    title: 'Full-stack Developer',
-    imageUrl: 'https://shinemd.com/wp-content/uploads/2022/05/Treatments-For-Men-1.jpg',
-    socials: [
-      { platform: 'instagram', url: 'https://instagram.com' },
-      { platform: 'linkedin', url: 'https://linkedin.com' },
-      { platform: 'facebook', url: 'https://facebook.com' },
-    ],
-  },
-  {
-    name: 'Kaveeja Sachintha Perera',
-    title: 'Full-stack Developer',
-    imageUrl: 'https://shinemd.com/wp-content/uploads/2022/05/Treatments-For-Men-1.jpg',
-    socials: [
-      { platform: 'instagram', url: 'https://instagram.com' },
-      { platform: 'linkedin', url: 'https://linkedin.com' },
-      { platform: 'facebook', url: 'https://facebook.com' },
-    ],
-  },
-  {
-    name: 'Kaveeja Sachintha Perera',
-    title: 'Full-stack Developer',
-    imageUrl: 'https://shinemd.com/wp-content/uploads/2022/05/Treatments-For-Men-1.jpg',
-    socials: [
-      { platform: 'instagram', url: 'https://instagram.com' },
-      { platform: 'linkedin', url: 'https://linkedin.com' },
-      { platform: 'facebook', url: 'https://facebook.com' },
-    ],
-  },
-  {
-    name: 'Kaveeja Sachintha Perera',
-    title: 'Full-stack Developer',
-    imageUrl: 'https://shinemd.com/wp-content/uploads/2022/05/Treatments-For-Men-1.jpg',
-    socials: [
-      { platform: 'instagram', url: 'https://instagram.com' },
-      { platform: 'linkedin', url: 'https://linkedin.com' },
-      { platform: 'facebook', url: 'https://facebook.com' },
-    ],
-  },
-  {
-    name: 'Kaveeja Sachintha Perera',
-    title: 'Full-stack Developer',
-    imageUrl: 'https://shinemd.com/wp-content/uploads/2022/05/Treatments-For-Men-1.jpg',
-    socials: [
-      { platform: 'instagram', url: 'https://instagram.com' },
-      { platform: 'linkedin', url: 'https://linkedin.com' },
-      { platform: 'facebook', url: 'https://facebook.com' },
-    ],
-  },
-  {
-    name: 'Kaveeja Sachintha Perera',
-    title: 'Full-stack Developer',
-    imageUrl: 'https://shinemd.com/wp-content/uploads/2022/05/Treatments-For-Men-1.jpg',
-    socials: [
-      { platform: 'instagram', url: 'https://instagram.com' },
-      { platform: 'linkedin', url: 'https://linkedin.com' },
-      { platform: 'facebook', url: 'https://facebook.com' },
-    ],
-  }
-];
+    {
+      name: "Kaveeja Sachintha Perera",
+      title: "Full-stack Developer",
+      imageUrl:
+        "https://shinemd.com/wp-content/uploads/2022/05/Treatments-For-Men-1.jpg",
+      socials: [
+        { platform: "instagram", url: "https://instagram.com" },
+        { platform: "linkedin", url: "https://linkedin.com" },
+        { platform: "facebook", url: "https://facebook.com" },
+      ],
+    },
+    {
+      name: "Kaveeja Sachintha Perera",
+      title: "Full-stack Developer",
+      imageUrl:
+        "https://shinemd.com/wp-content/uploads/2022/05/Treatments-For-Men-1.jpg",
+      socials: [
+        { platform: "instagram", url: "https://instagram.com" },
+        { platform: "linkedin", url: "https://linkedin.com" },
+        { platform: "facebook", url: "https://facebook.com" },
+      ],
+    },
+    {
+      name: "Kaveeja Sachintha Perera",
+      title: "Full-stack Developer",
+      imageUrl:
+        "https://shinemd.com/wp-content/uploads/2022/05/Treatments-For-Men-1.jpg",
+      socials: [
+        { platform: "instagram", url: "https://instagram.com" },
+        { platform: "linkedin", url: "https://linkedin.com" },
+        { platform: "facebook", url: "https://facebook.com" },
+      ],
+    },
+    {
+      name: "Kaveeja Sachintha Perera",
+      title: "Full-stack Developer",
+      imageUrl:
+        "https://shinemd.com/wp-content/uploads/2022/05/Treatments-For-Men-1.jpg",
+      socials: [
+        { platform: "instagram", url: "https://instagram.com" },
+        { platform: "linkedin", url: "https://linkedin.com" },
+        { platform: "facebook", url: "https://facebook.com" },
+      ],
+    },
+    {
+      name: "Kaveeja Sachintha Perera",
+      title: "Full-stack Developer",
+      imageUrl:
+        "https://shinemd.com/wp-content/uploads/2022/05/Treatments-For-Men-1.jpg",
+      socials: [
+        { platform: "instagram", url: "https://instagram.com" },
+        { platform: "linkedin", url: "https://linkedin.com" },
+        { platform: "facebook", url: "https://facebook.com" },
+      ],
+    },
+    {
+      name: "Kaveeja Sachintha Perera",
+      title: "Full-stack Developer",
+      imageUrl:
+        "https://shinemd.com/wp-content/uploads/2022/05/Treatments-For-Men-1.jpg",
+      socials: [
+        { platform: "instagram", url: "https://instagram.com" },
+        { platform: "linkedin", url: "https://linkedin.com" },
+        { platform: "facebook", url: "https://facebook.com" },
+      ],
+    },
+  ];
 
   return (
     <>
@@ -177,13 +185,17 @@ function AboutSection() {
             world.
           </p>
 
-          <button className="mt-4 bg-gradient-to-r from-blue-800 to-cyan-500 text-white px-6 py-3 rounded-lg font-medium shadow-md w-full sm:w-auto">
+          {/* <button className="mt-4 bg-gradient-to-r from-blue-800 to-cyan-500 text-white px-6 py-3 rounded-lg font-medium shadow-md w-full sm:w-auto">
             Let’s Build the Future Together
-          </button>
+          </button> */}
+
+          <PrimaryButton onClick={() => alert("Clicked!")}>
+            Let’s Build the Future Together
+          </PrimaryButton>
         </div>
 
         {/* Right Image */}
-        <div className="w-full lg:w-1/2 flex gap-2 ml-10 overflow-hidden">
+        <div className="w-full lg:w-1/2 flex gap-2 ml-4 overflow-hidden">
           <img
             src="/assets/heroImg.png"
             alt="Team collaboration"
@@ -390,30 +402,29 @@ function AboutSection() {
         </div> */}
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {teamMembers.map((member, i) => (
-          <TeamMemberCard key={i} member={member} />
-        ))}
-      </div>
-      
+          {teamMembers.map((member, i) => (
+            <TeamMemberCard key={i} member={member} />
+          ))}
+        </div>
       </section>
 
       {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
 
-
-
       <section className="px-4 py-16 max-w-7xl mx-auto text-center">
-      <h2 className="text-4xl sm:text-5xl font-light font-sora text-gray-900">Our Team of Experts</h2>
-      <p className="text-gray-600 mt-4 text-base sm:text-lg font-lato">
-        A Diverse Crew Of Developers, Designers, And Creators Powering Our Mission.
-      </p>
+        <h2 className="text-4xl sm:text-5xl font-light font-sora text-gray-900">
+          Our Team of Experts
+        </h2>
+        <p className="text-gray-600 mt-4 text-base sm:text-lg font-lato">
+          A Diverse Crew Of Developers, Designers, And Creators Powering Our
+          Mission.
+        </p>
 
-      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {teamMembers.map((member, i) => (
-          <TeamMemberCard key={i} member={member} />
-        ))}
-      </div>
-    </section>
-
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {teamMembers.map((member, i) => (
+            <TeamMemberCard key={i} member={member} />
+          ))}
+        </div>
+      </section>
     </>
   );
 }
