@@ -163,24 +163,46 @@ function AboutSection() {
       <section className="px-4 py-15 max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
         {/* Left Content */}
         <div className="w-full lg:w-4/4 space-y-6 text-center lg:text-left px-4 sm:px-6 lg:px-0">
-          <p className="text-blue-700 font-medium -mb-2 text-sm sm:text-base">
+          <p
+            style={{ fontFamily: "Sora, sans-serif" }}
+            className="text-blue-700 font-regular -mb-2 text-sm sm:text-base"
+          >
             Our Story. Our Vision.
           </p>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-[90px] text-gray-900 leading-tight font-normal font-sora">
+          <h1
+            style={{ fontFamily: "Sora, sans-serif" }}
+            className="text-4xl sm:text-5xl lg:text-[80px] text-gray-900 leading-tight font-regular"
+          >
             The Innovation That Drives{" "}
-            <span className="text-[#022F8C] font-bold">BraiEvo</span>{" "}
-            <span className="text-[#022F8C] font-bold">Forward.</span>
+            <span
+              style={{ fontFamily: "Sora, sans-serif" }}
+              className="text-[#022F8C] font-bold"
+            >
+              BraiEvo
+            </span>{" "}
+            <span
+              style={{ fontFamily: "Sora, sans-serif" }}
+              className="text-[#022F8C] font-bold"
+            >
+              Forward.
+            </span>
           </h1>
 
-          <p className="text-[#1A1A1A] text-base sm:text-lg lg:text-xl font-normal font-sora max-w-2xl mx-auto lg:mx-0">
+          <p
+            style={{ fontFamily: "Sora, sans-serif" }}
+            className="text-[#1A1A1A] text-base sm:text-lg lg:text-xl font-light font-sora max-w-2xl mx-auto lg:mx-0"
+          >
             At BraiEvo Technologies, we are more than just developers. We’re
             innovators shaping the digital future. Our journey is rooted in
             passion, purpose, and precision, delivering AI-driven and scalable
             software solutions across industries.
           </p>
 
-          <p className="text-[#273B84] text-sm sm:text-base lg:text-[20px] font-normal font-lato">
+          <p
+            style={{ fontFamily: "Lato, sans-serif" }}
+            className="text-[#273B84] text-sm sm:text-base lg:text-[20px] font-regular"
+          >
             Join us as we continue to build technology that transforms the
             world.
           </p>
@@ -208,10 +230,16 @@ function AboutSection() {
 
       <section>
         <main className="-mt-15 container mx-auto px-6 py-16 md:py-24 text-center max-w-7xl">
-          <h1 className="text-[70px] font-light text-gray-900 leading-tight font-sora">
+          <h1
+            style={{ fontFamily: "Sora, sans-serif" }}
+            className="text-[70px] font-light text-gray-900 leading-tight"
+          >
             Driven by Innovation. Powered by Purpose.
           </h1>
-          <p className="mt-6 max-w-4xl mx-auto text-lg md:text-xl text-gray-600 leading-relaxed">
+          <p
+            style={{ fontFamily: "Sora, sans-serif" }}
+            className="mt-6 max-w-4xl mx-auto text-lg md:text-xl text-gray-600 leading-relaxed"
+          >
             At BraiEvo Technologies, we're a passionate team of engineers and
             innovators shaping next-gen solutions. We may be at the beginning,
             but our commitment to quality, creativity, and AI-driven technology
@@ -244,10 +272,16 @@ function AboutSection() {
             />
           </div>
           <div className="w-full lg:w-1/2 text-center lg:text-left">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#022F8C] mb-4">
+            <h2
+              style={{ fontFamily: "Sora, sans-serif" }}
+              className="text-3xl sm:text-4xl font-bold text-[#022F8C] mb-4"
+            >
               Our Vision
             </h2>
-            <p className="text-gray-700 text-base sm:text-lg leading-relaxed font-sora">
+            <p
+              style={{ fontFamily: "Sora, sans-serif" }}
+              className="text-gray-700 text-base sm:text-lg leading-relaxed font-light"
+            >
               At BraiEvo Technologies, our vision is to lead the way in digital
               innovation by creating intelligent, scalable, and human-centered
               technology. We are driven by a passion to empower businesses and
@@ -259,10 +293,16 @@ function AboutSection() {
         {/* Mission Section */}
         <div className="flex flex-col lg:flex-row items-center gap-10">
           <div className="w-full lg:w-1/2 text-center lg:text-left">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#022F8C] mb-4">
+            <h2
+              style={{ fontFamily: "Sora, sans-serif" }}
+              className="text-3xl sm:text-4xl font-bold text-[#022F8C] mb-4"
+            >
               Our Mission
             </h2>
-            <p className="text-gray-700 text-base sm:text-lg leading-relaxed font-sora">
+            <p
+              style={{ fontFamily: "Sora, sans-serif" }}
+              className="text-gray-700 text-base sm:text-lg leading-relaxed font-light"
+            >
               Our mission is to deliver cutting-edge digital products and
               services that solve real-world problems. We aim to empower clients
               through smart, adaptive solutions developed by a passionate team,
@@ -283,14 +323,23 @@ function AboutSection() {
 
       <section className="px-4 py-16 max-w-7xl mx-auto text-center">
         {/* Headings */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-[#1A1A1A] font-sora leading-tight sm:leading-[1.2]">
+        <h1
+          style={{ fontFamily: "Sora, sans-serif" }}
+          className="text-[70px] font-light text-[#1A1A1A] font-sora leading-tight sm:leading-[1.2]"
+        >
           Empowering Innovation with <br />
-          <span className="text-[#1A1A1A] mt-4 block">
+          <span
+            style={{ fontFamily: "Sora, sans-serif" }}
+            className="text-[#1A1A1A] mt-4 block"
+          >
             BraiEvo Technologies
           </span>
         </h1>
 
-        <p className="text-gray-600 font-light text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto mb-10 font-sora mt-6 leading-relaxed">
+        <p
+          style={{ fontFamily: "Sora, sans-serif" }}
+          className="text-[25px] text-gray-600 font-light max-w-3xl mx-auto mb-10 mt-6 leading-relaxed"
+        >
           Discover how we blend creativity, technology, and expertise
           <br className="hidden sm:block" />
           to build smarter digital solutions for a better tomorrow.
@@ -333,12 +382,14 @@ function AboutSection() {
 
       {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
       <section className="px-4 py-16 max-w-7xl mx-auto text-center">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-[#1A1A1A] font-sora leading-tight sm:leading-[1.2]">
+        <h1 style={{ fontFamily: "Sora, sans-serif" }}
+        className="text-[70px] font-light text-[#1A1A1A] font-sora leading-tight">
           Meet the Visionary Behind <br />
           <span className="text-[#1A1A1A] mt-4 block">BraiEvo</span>
         </h1>
 
-        <p className="text-gray-600 font-light text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto mb-10 font-sora mt-6 ">
+        <p style={{ fontFamily: "Sora, sans-serif" }}
+        className="text-gray-600 font-light text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto mb-10 font-sora mt-6 ">
           Empowering innovation through leadership, experience, and a bold
           vision for the future.
           <br className="hidden sm:block" />
@@ -355,7 +406,8 @@ function AboutSection() {
 
           <div className="md:w-2/4 p-8 bg-[#273B84] text-white flex flex-col justify-between rounded-[30px] -ml-8">
             <div>
-              <p className="text-left text-lg sm:text-xl leading-relaxed font-light font-sora">
+              <p style={{ fontFamily: "Sora, sans-serif" }}
+              className="text-left text-lg sm:text-xl leading-relaxed font-light font-sora">
                 The founder and driving force behind BraiEvo Technologies,
                 Kaveeja is a passionate technologist with over 7 years of
                 experience in full-stack development, AI integration, and
@@ -384,22 +436,17 @@ function AboutSection() {
 
       <section className="px-4 py-16 max-w-7xl mx-auto text-center">
         {/* Headings */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-[#1A1A1A] font-sora leading-tight sm:leading-[1.2]">
+        <h1 style={{ fontFamily: "Sora, sans-serif" }}
+        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-[#1A1A1A] font-sora leading-tight sm:leading-[1.2]">
           Meet Our Co-Founders <br />
           <span className="text-[#1A1A1A] block mt-4">BraiEvo</span>
         </h1>
 
-        <p className="text-gray-600 font-light text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto mt-6 mb-10 font-sora">
+        <p style={{ fontFamily: "Sora, sans-serif" }}
+        className="text-gray-600 font-light text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto mt-6 mb-10 font-sora">
           Strategic thinkers and innovators leading BraiEvo’s technology
           evolution.
         </p>
-
-        {/* Profile Cards */}
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-12">
-          {coFoundersData.map((founder) => (
-            <CoFounderCard key={founder.id} founder={founder} />
-          ))}
-        </div> */}
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {teamMembers.map((member, i) => (
@@ -409,12 +456,14 @@ function AboutSection() {
       </section>
 
       {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
-
+{/* max-w-[calc(var(--container-max)+(var(--container-pad)*2))] */}
       <section className="px-4 py-16 max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl sm:text-5xl font-light font-sora text-gray-900">
+        <h2 style={{ fontFamily: "Sora, sans-serif" }}
+        className="text-4xl sm:text-5xl font-light font-sora text-gray-900">
           Our Team of Experts
         </h2>
-        <p className="text-gray-600 mt-4 text-base sm:text-lg font-lato">
+        <p style={{ fontFamily: "Sora, sans-serif" }}
+        className="text-gray-600 mt-4 text-base sm:text-lg font-lato">
           A Diverse Crew Of Developers, Designers, And Creators Powering Our
           Mission.
         </p>
