@@ -1,16 +1,12 @@
 "use client";
-import CoFounderCard from "@/components/CoFounderCard";
-import Navbar from "@/components/Navbar";
-import PrimaryButton from "@/components/PrimaryButton";
-import ProfileCard, { Profile } from "@/components/ProfileCard";
-import RotatingButton from "@/components/RotatingButton";
-import StatCard from "@/components/StatCard";
-import { TeamMemberCard } from "@/components/TeamMemberCard";
-import { CoFounder } from "@/components/types";
+import PrimaryButton from "@/components/maincomponents/PrimaryButton";
+import { Profile } from "@/components/maincomponents/ProfileCard";
+import RotatingButton from "@/components/maincomponents/RotatingButton";
+import StatCard from "@/components/maincomponents/StatCard";
+import { TeamMemberCard } from "@/components/maincomponents/TeamMemberCard";
+import { CoFounder } from "@/components/maincomponents/types";
 import React from "react";
 import { useState } from "react";
-import { FiInstagram, FiLinkedin, FiFacebook } from "react-icons/fi";
-
 function AboutSection() {
   const stats = [
     { value: "50+", label: "Live Client Project", variant: "blue" },

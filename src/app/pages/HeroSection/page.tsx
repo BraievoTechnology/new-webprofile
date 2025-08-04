@@ -1,6 +1,6 @@
 "use client";
 
-import PrimaryButton from "@/components/PrimaryButton";
+import PrimaryButton from "@/components/maincomponents/PrimaryButton";
 
 export default function HeroSection() {
   return (

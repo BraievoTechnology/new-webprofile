@@ -5,7 +5,7 @@ import {
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
-import PrimaryButton from "./PrimaryButton";
+import PrimaryButton from "../maincomponents/PrimaryButton";
 
 export default function Footer() {
   return (
