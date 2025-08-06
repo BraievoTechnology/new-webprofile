@@ -161,7 +161,7 @@ function AboutSection() {
         <div className="w-full lg:w-4/4 space-y-6 text-center lg:text-left px-4 sm:px-6 lg:px-0">
           <p
             style={{ fontFamily: "Sora, sans-serif" }}
-            className="text-blue-700 font-regular -mb-2 text-sm sm:text-base"
+            className="bg-gradient-to-r from-[#022F8C] to-[#019CD4] text-white text-xs font-regular px-6 py-2 rounded-full shadow-md inline-block"
           >
             Our Story. Our Vision.
           </p>
