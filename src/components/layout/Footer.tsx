@@ -9,7 +9,7 @@ import PrimaryButton from "../maincomponents/PrimaryButton";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-[#019CD4]/50 to-[#022F8C]/50 text-gray-700 py-10 px-6 sm:px-12">
+    <footer className="bg-gradient-to-r from-[#019CD4]/80 to-[#022F8C]/80 text-gray-100 py-10 px-6 sm:px-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
         {/* Column 1 */}
         <div className="flex flex-col items-center md:items-start justify-center">
