@@ -8,6 +8,26 @@ import { RiMailLine } from "react-icons/ri";
 
 export default function ContactUs() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+
+  const validateEmail = (value: string) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(value);
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+    if (error) setError("");
+  };
+
+  const handleBlur = () => {
+    if (!email) {
+      setError("Email is required");
+    } else if (!validateEmail(email)) {
+      setError("Invalid email address");
+    }
+  };
 
   const faqs = [
     {
@@ -78,12 +98,20 @@ export default function ContactUs() {
               <div className="relative">
                 <input
                   type="email"
+                  value={email}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
                   placeholder="Your Email"
-                  className="w-full border border-gray-300 px-4 py-3 rounded-md focus:outline-none pl-10 text-gray-800 placeholder-gray-400"
+                  className={`w-full border px-4 py-3 rounded-md focus:outline-none pl-10 text-gray-800 placeholder-gray-400 ${
+                    error ? "border-red-500" : "border-gray-300"
+                  }`}
                 />
                 <span className="absolute left-3 top-3.5 text-gray-400">
                   <RiMailLine className="w-5 h-5" />
                 </span>
+                {error && (
+                  <p className="text-red-500 text-sm mt-1 pl-1">{error}</p>
+                )}
               </div>
 
               <div>
@@ -154,7 +182,7 @@ export default function ContactUs() {
         style={{ fontFamily: "Sora, sans-serif" }}
         className="bg-white text-gray-800 px-6 py-20"
       >
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center mb-20">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-20 px-4">
           <div className="rounded-[20px] overflow-hidden">
             <MapComponent />
           </div>
@@ -167,8 +195,8 @@ export default function ContactUs() {
             <h3 className="mt-4 text-3xl font-bold mb-4">
               Connecting Near and Far
             </h3>
-            <h4 className="font-bold mb-1 mt-15">Headquarters</h4>
-            <div className="font-light">
+            <h4 className="font-bold mb-2 mt-6">Headquarters</h4>
+            <div className="font-light space-y-1">
               <p>Snappy Inc.</p>
               <p>123 Tech Boulevard, Suite 456</p>
               <p>San Francisco, CA 12345</p>
@@ -182,7 +210,6 @@ export default function ContactUs() {
           style={{ fontFamily: "Sora, sans-serif" }}
           className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10"
         >
-          {/* FAQ Text Block */}
           <div className="mt-10">
             <p className="text-sm text-[#022F8C] font-medium">FAQ</p>
             <h3 className="text-3xl font-bold mb-4 mt-4">
