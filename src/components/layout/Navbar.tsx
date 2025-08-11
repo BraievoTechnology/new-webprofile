@@ -15,16 +15,16 @@ export default function Navbar() {
       <img
         src="/assets/logo.png"
         alt="BraiEvo Logo"
-        className="w-20 sm:w-24 h-auto"
+        className="w-20 h-auto sm:w-24"
       />
       <div className="flex items-center gap-4 sm:gap-6 md:gap-10">
-        <div className="hidden md:flex flex-1 justify-center">
-          <nav className="flex gap-8 sm:gap-12 items-center text-gray-700 text-base font-medium font-lato">
+        <div className="justify-center flex-1 hidden md:flex">
+          <nav className="flex items-center gap-8 text-base font-medium text-gray-700 sm:gap-12 font-lato">
             {[
               { href: "/", label: "Home" },
               { href: "/pages/AboutSection", label: "About" },
               { href: "/portfolio", label: "Portfolio" },
-              { href: "/careers", label: "Careers" },
+              { href: "/pages/CareerSection", label: "Careers" },
               { href: "/blog", label: "Blog" },
             ].map(({ href, label }) => (
               <Link
@@ -72,6 +72,7 @@ export default function Navbar() {
           >
             &times;
           </button>
+
 
           <div className="mt-16 flex flex-col gap-8 items-center w-full">
             {[
