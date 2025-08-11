@@ -56,21 +56,21 @@ export default function ContactUs() {
     <div className="font-sans text-gray-800">
       {/* Contact Form Section */}
       <section className="bg-gradient-to-b from-[#022F8C] to-[#019CD4] text-white rounded-bl-[30px] rounded-br-[30px] py-16">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-6xl px-6 mx-auto">
           <h2
             style={{ fontFamily: "Sora, sans-serif" }}
-            className="text-3xl sm:text-4xl md:text-5xl font-light text-center mb-2"
+            className="mb-2 text-3xl font-light text-center sm:text-4xl md:text-5xl"
           >
             Get In Touch
           </h2>
           <p
             style={{ fontFamily: "Sora, sans-serif" }}
-            className="text-base sm:text-lg md:text-2xl text-center font-light mb-10"
+            className="mb-10 text-base font-light text-center sm:text-lg md:text-2xl"
           >
             You Can Reach Us Anytime
           </p>
 
-          <div className="bg-white rounded-xl p-8 shadow-lg flex flex-col md:flex-row items-center gap-10">
+          <div className="flex flex-col items-center gap-10 p-8 bg-white shadow-lg rounded-xl md:flex-row">
             {/* Left: Vector Image */}
             <div className="w-full md:w-1/2">
               <img
@@ -81,17 +81,17 @@ export default function ContactUs() {
             </div>
 
             {/* Right: Contact Form */}
-            <form className="space-y-6 w-full md:w-1/2 text-gray-800">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <form className="w-full space-y-6 text-gray-800 md:w-1/2">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 <input
                   type="text"
                   placeholder="Full Name"
-                  className="w-full border border-gray-300 px-4 py-3 rounded-md focus:outline-none text-gray-800 placeholder-gray-400"
+                  className="w-full px-4 py-3 text-gray-800 placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none"
                 />
                 <input
                   type="text"
                   placeholder="Last Name"
-                  className="w-full border border-gray-300 px-4 py-3 rounded-md focus:outline-none text-gray-800 placeholder-gray-400"
+                  className="w-full px-4 py-3 text-gray-800 placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none"
                 />
               </div>
 
@@ -110,7 +110,7 @@ export default function ContactUs() {
                   <RiMailLine className="w-5 h-5" />
                 </span>
                 {error && (
-                  <p className="text-red-500 text-sm mt-1 pl-1">{error}</p>
+                  <p className="pl-1 mt-1 text-sm text-red-500">{error}</p>
                 )}
               </div>
 
@@ -118,7 +118,7 @@ export default function ContactUs() {
                 <input
                   type="tel"
                   placeholder="+94 Phone Number"
-                  className="w-full border border-gray-300 px-4 py-3 rounded-md focus:outline-none text-gray-800 placeholder-gray-400"
+                  className="w-full px-4 py-3 text-gray-800 placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none"
                 />
               </div>
 
@@ -126,7 +126,7 @@ export default function ContactUs() {
                 <textarea
                   rows={4}
                   placeholder="How Can We Help?"
-                  className="w-full border border-gray-300 px-4 py-3 rounded-md focus:outline-none text-gray-800 placeholder-gray-400"
+                  className="w-full px-4 py-3 text-gray-800 placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none"
                 />
               </div>
 
@@ -142,7 +142,7 @@ export default function ContactUs() {
           </div>
 
           {/* Info Boxes */}
-          <div className="mt-10 grid md:grid-cols-3 gap-6 text-white">
+          <div className="grid gap-6 mt-10 text-white md:grid-cols-3">
             <div style={{ fontFamily: "Sora, sans-serif" }}>
               <h4 className="font-medium text-[20px] mb-1">Contact Us</h4>
               <p className="font-thin">
@@ -180,9 +180,9 @@ export default function ContactUs() {
       {/* Location & FAQ Section */}
       <section
         style={{ fontFamily: "Sora, sans-serif" }}
-        className="bg-white text-gray-800 px-6 py-20"
+        className="px-6 py-20 text-gray-800 bg-white"
       >
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-20 px-4">
+        <div className="grid items-center grid-cols-1 gap-10 px-4 mx-auto mb-20 max-w-7xl md:grid-cols-2">
           <div className="rounded-[20px] overflow-hidden">
             <MapComponent />
           </div>
@@ -192,11 +192,11 @@ export default function ContactUs() {
             <p className="text-sm text-[#022F8C] font-normal mb-1">
               Our Location
             </p>
-            <h3 className="mt-4 text-3xl font-bold mb-4">
+            <h3 className="mt-4 mb-4 text-3xl font-bold">
               Connecting Near and Far
             </h3>
-            <h4 className="font-bold mb-2 mt-6">Headquarters</h4>
-            <div className="font-light space-y-1">
+            <h4 className="mt-6 mb-2 font-bold">Headquarters</h4>
+            <div className="space-y-1 font-light">
               <p>Snappy Inc.</p>
               <p>123 Tech Boulevard, Suite 456</p>
               <p>San Francisco, CA 12345</p>
@@ -208,28 +208,29 @@ export default function ContactUs() {
         {/* FAQ Section */}
         <div
           style={{ fontFamily: "Sora, sans-serif" }}
-          className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10"
+          className="grid max-w-6xl gap-10 mx-auto md:grid-cols-2"
         >
           <div className="mt-10">
             <p className="text-sm text-[#022F8C] font-medium">FAQ</p>
-            <h3 className="text-3xl font-bold mb-4 mt-4">
+            <h3 className="mt-4 mb-4 text-3xl font-bold">
               Have Any <br /> Questions For Us?
             </h3>
             <p className="font-light text-[#1A1A1A]">
-              If you have a question, we're here to help. Just enter your email
-              below and we’ll get back to you with the answers you need.
+              If you have a question, we&apos;re here to help. Just enter your
+              email below and we&apos;ll get back to you with the answers you
+              need.
             </p>
           </div>
 
           {/* Accordion Section */}
-          <div className="border border-blue-500 rounded-md divide-y divide-blue-200">
+          <div className="border border-blue-500 divide-y divide-blue-200 rounded-md">
             {faqs.map((faq, idx) => (
               <div
                 key={idx}
                 className="p-4 cursor-pointer"
                 onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
               >
-                <div className="flex justify-between items-center">
+                <div className="flex items-center justify-between">
                   <h4 className="text-lg md:text-xl font-normal text-[#0F172A]">
                     {faq.question}
                   </h4>
@@ -255,24 +256,24 @@ export default function ContactUs() {
         className="bg-[#022F8C] min-h-[300px] max-w-6xl mx-auto mb-40 text-white py-8 px-4 flex items-center justify-center"
       >
         <div className="w-full text-center">
-          <h2 className="text-xl font-light md:text-2xl mb-4">
+          <h2 className="mb-4 text-xl font-light md:text-2xl">
             Simplify your workflow with speed you can trust.
           </h2>
-          <form className="flex flex-col md:flex-row max-w-2xl mx-auto justify-center items-center gap-3">
+          <form className="flex flex-col items-center justify-center max-w-2xl gap-3 mx-auto md:flex-row">
             <div className="relative w-full md:w-2/3">
-              <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none">
+              <span className="absolute text-gray-400 transform -translate-y-1/2 pointer-events-none left-3 top-1/2">
                 <LuMail className="w-5 h-5" />
               </span>
               <input
                 type="email"
                 placeholder="Your Email"
-                className="pl-10 p-3 rounded-md text-gray-400 w-full bg-white border-none outline-none"
+                className="w-full p-3 pl-10 text-gray-400 bg-white border-none rounded-md outline-none"
               />
             </div>
 
             <button
               type="submit"
-              className="bg-black text-white px-6 py-3 rounded w-full md:w-auto"
+              className="w-full px-6 py-3 text-white bg-black rounded md:w-auto"
             >
               Reach Us
             </button>

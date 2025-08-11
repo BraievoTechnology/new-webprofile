@@ -10,7 +10,7 @@ const benefits = [
     icon: <Clock size={24} className="text-[#022F8C]" />,
     title: "Flexible Working Hours",
     description:
-      "Work when you're most productive with our flexible scheduling options.",
+      "Work when you&apos;re most productive with our flexible scheduling options.",
   },
   {
     icon: <Globe size={24} className="text-[#022F8C]" />,
@@ -51,7 +51,7 @@ const jobs = [
     category: "Web Development",
     jobType: "Full-time" as const,
     description:
-      "Work across our entire stack to build complete web applications. You'll be responsible for both frontend and backend development, working with modern technologies.",
+      "Work across our entire stack to build complete web applications. You&apos;ll be responsible for both frontend and backend development, working with modern technologies.",
     postedAt: "2 days ago",
   },
   {
@@ -75,8 +75,9 @@ export default function Hero() {
             Join Our Team of <span className="text-[#022F8C]">Innovators</span>
           </h1>
           <p className="mt-6 sm:mt-8 md:mt-12 text-lg sm:text-xl md:text-2xl lg:text-[30px] font-light text-[#1A1A1A] max-w-lg mx-auto md:mx-0">
-            Build the future with us. We're looking for talented individuals who
-            are passionate about creating cutting-edge technology solutions.
+            Build the future with us. We&apos;re looking for talented
+            individuals who are passionate about creating cutting-edge
+            technology solutions.
           </p>
           <div className="mt-6 sm:mt-8 md:mt-12">
             <ViewPositionsButton jobs={[]} />

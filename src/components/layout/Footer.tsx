@@ -6,13 +6,14 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import PrimaryButton from "../maincomponents/PrimaryButton";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-r from-[#019CD4]/80 to-[#022F8C]/80 text-gray-100 py-10 px-6 sm:px-12">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+      <div className="grid grid-cols-1 gap-10 mx-auto text-center max-w-7xl md:grid-cols-3 md:text-left">
         {/* Column 1 */}
-        <div className="flex flex-col items-center md:items-start justify-center">
+        <div className="flex flex-col items-center justify-center md:items-start">
           <div className="mb-4">
             <Image
               src="/assets/Horizontal2.png"
@@ -24,7 +25,7 @@ export default function Footer() {
           </div>
           <h2
             style={{ fontFamily: "Sora, sans-serif" }}
-            className="text-lg font-semibold mb-2"
+            className="mb-2 text-lg font-semibold"
           >
             BraiEvo Technologies Pvt. Ltd.
           </h2>
@@ -50,10 +51,10 @@ export default function Footer() {
         </div>
 
         {/* Column 2 */}
-        <div className="flex flex-col items-center md:items-start justify-center ml-30">
+        <div className="flex flex-col items-center justify-center md:items-start ml-30">
           <h2
             style={{ fontFamily: "Sora, sans-serif" }}
-            className="text-lg font-semibold mb-4"
+            className="mb-4 text-lg font-semibold"
           >
             Our Pages
           </h2>
@@ -62,51 +63,51 @@ export default function Footer() {
             className="space-y-2 text-[18px] text-start "
           >
             <li>
-              <a href="/" className="hover:text-gray-900">
+              <Link href="/" className="hover:text-gray-900">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/about" className="hover:text-gray-900">
+              <Link href="/about" className="hover:text-gray-900">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/portfolio" className="hover:text-gray-900">
+              <Link href="/portfolio" className="hover:text-gray-900">
                 Portfolio
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/careers" className="hover:text-gray-900">
+              <Link href="/careers" className="hover:text-gray-900">
                 Careers
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/blog" className="hover:text-gray-900">
+              <Link href="/blog" className="hover:text-gray-900">
                 Blog
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
 
         {/* Column 3 */}
-        <div className="flex flex-col items-center md:items-end justify-center text-right">
+        <div className="flex flex-col items-center justify-center text-right md:items-end">
           <div>
             <h2
               style={{ fontFamily: "Sora, sans-serif" }}
-              className="text-lg font-semibold mb-4"
+              className="mb-4 text-lg font-semibold"
             >
               Follow Us
             </h2>
             <p
               style={{ fontFamily: "Sora, sans-serif" }}
-              className="text-sm mb-4"
+              className="mb-4 text-sm"
             >
               At BraiEvo Technologies, our services are designed to elevate your
               vision through smart technology, intuitive design, and strategic
               innovation.
             </p>
-            <div className="flex gap-4 text-xl justify-end">
+            <div className="flex justify-end gap-4 text-xl">
               <a href="#" aria-label="Facebook" className="hover:text-blue-600">
                 <FaFacebookF />
               </a>
@@ -125,8 +126,10 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className="mt-6 self-end">
-            <PrimaryButton href="/contact">Contact Us</PrimaryButton>
+          <div className="self-end mt-6">
+            <Link href="/contact" passHref>
+              <PrimaryButton>Contact Us</PrimaryButton>
+            </Link>
           </div>
         </div>
       </div>

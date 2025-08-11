@@ -4,7 +4,7 @@ import { useState } from "react";
 import Button from "@/components/maincomponents/PrimaryButton";
 
 interface ViewPositionsButtonProps {
-  jobs?: any[]; // Pass your jobs array here
+  jobs?: unknown[]; // Pass your jobs array here
 }
 
 export default function ViewPositionsButton({
