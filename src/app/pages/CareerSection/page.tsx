@@ -71,7 +71,7 @@ export default function Hero() {
       <div className="container flex flex-col items-center px-4 mx-auto md:px-8 lg:px-20 md:flex-row">
         {/* Left Text Content */}
         <div className="flex-1 text-center md:text-left">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[90px] font-meduim leading-tight">
+          <h1 className="text-7xl sm:text-5xl md:text-6xl lg:text-[90px] font-meduim leading-tight">
             Join Our Team of <span className="text-[#022F8C]">Innovators</span>
           </h1>
           <p className="mt-6 sm:mt-8 md:mt-12 text-lg sm:text-xl md:text-2xl lg:text-[30px] font-light text-[#1A1A1A] max-w-lg mx-auto md:mx-0">

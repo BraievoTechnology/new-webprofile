@@ -11,7 +11,7 @@ export default function Navbar() {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <header className="w-3/4 px-4 sm:px-6 md:px-8 py-4 flex justify-between items-center bg-transparent relative mx-auto">
+    <header className="relative flex items-center justify-between w-3/4 px-4 py-4 mx-auto bg-transparent sm:px-6 md:px-8">
       <img
         src="/assets/logo.png"
         alt="BraiEvo Logo"
@@ -23,9 +23,9 @@ export default function Navbar() {
             {[
               { href: "/", label: "Home" },
               { href: "/pages/AboutSection", label: "About" },
-              { href: "/portfolio", label: "Portfolio" },
+              // { href: "/portfolio", label: "Portfolio" },
               { href: "/pages/CareerSection", label: "Careers" },
-              { href: "/blog", label: "Blog" },
+              // { href: "/blog", label: "Blog" },
             ].map(({ href, label }) => (
               <Link
                 key={href}
@@ -63,18 +63,17 @@ export default function Navbar() {
 
       {/* Fullscreen mobile dropdown menu */}
       {isOpen && (
-        <div className="fixed top-0 left-0 w-full h-screen bg-white shadow-md flex flex-col items-center px-6 py-8 z-50">
+        <div className="fixed top-0 left-0 z-50 flex flex-col items-center w-full h-screen px-6 py-8 bg-white shadow-md">
           {/* Close Button */}
           <button
             onClick={() => setIsOpen(false)}
-            className="absolute top-6 right-8 text-gray-700 text-3xl focus:outline-none"
+            className="absolute text-3xl text-gray-700 top-6 right-8 focus:outline-none"
             aria-label="Close Menu"
           >
             &times;
           </button>
 
-
-          <div className="mt-16 flex flex-col gap-8 items-center w-full">
+          <div className="flex flex-col items-center w-full gap-8 mt-16">
             {[
               { href: "/", label: "Home" },
               { href: "/about", label: "About" },
@@ -103,7 +102,7 @@ export default function Navbar() {
 
             <Link
               href="/contact"
-              className="mt-4 bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-4 py-2 rounded-full text-sm font-semibold"
+              className="px-4 py-2 mt-4 text-sm font-semibold text-white rounded-full bg-gradient-to-r from-blue-600 to-cyan-500"
               onClick={() => setIsOpen(false)}
             >
               Reach Us
