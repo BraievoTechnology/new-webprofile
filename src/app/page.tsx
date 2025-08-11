@@ -5,10 +5,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutSection from "./pages/AboutSection/page";
 import HeroSection from "./pages/HeroSection/page";
 import Footer from "@/components/layout/Footer";
+import Contactus from "./pages/Contactus/page";
 
 export default function Home() {
   return (
-    <main className="w-full min-h-screen bg-white">
+    <main className="w-full min-h-screen">
       <HeroSection />
     </main>
   );

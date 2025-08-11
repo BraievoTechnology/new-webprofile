@@ -11,7 +11,7 @@ export default function Navbar() {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <header className="relative flex items-center justify-between w-3/4 px-4 py-4 mx-auto bg-white sm:px-6 md:px-8">
+    <header className="w-3/4 px-4 sm:px-6 md:px-8 py-4 flex justify-between items-center bg-transparent relative mx-auto">
       <img
         src="/assets/logo.png"
         alt="BraiEvo Logo"
@@ -46,7 +46,7 @@ export default function Navbar() {
       </div>
 
       <Link
-        href="/contact"
+        href="/pages/Contactus"
         className="hidden md:inline-block bg-gradient-to-r from-[#022F8C] to-[#019CD4] text-white px-6 sm:px-10 md:px-12 py-2 rounded-[10px] text-sm sm:text-md font-medium font-lato"
       >
         Reach Us
@@ -63,17 +63,18 @@ export default function Navbar() {
 
       {/* Fullscreen mobile dropdown menu */}
       {isOpen && (
-        <div className="fixed top-0 left-0 z-50 flex flex-col items-center w-full h-screen px-6 py-8 bg-white shadow-md">
+        <div className="fixed top-0 left-0 w-full h-screen bg-white shadow-md flex flex-col items-center px-6 py-8 z-50">
           {/* Close Button */}
           <button
             onClick={() => setIsOpen(false)}
-            className="absolute text-3xl text-gray-700 top-6 right-8 focus:outline-none"
+            className="absolute top-6 right-8 text-gray-700 text-3xl focus:outline-none"
             aria-label="Close Menu"
           >
             &times;
           </button>
 
-          <div className="flex flex-col items-center w-full gap-8 mt-16">
+
+          <div className="mt-16 flex flex-col gap-8 items-center w-full">
             {[
               { href: "/", label: "Home" },
               { href: "/about", label: "About" },
@@ -102,7 +103,7 @@ export default function Navbar() {
 
             <Link
               href="/contact"
-              className="px-4 py-2 mt-4 text-sm font-semibold text-white rounded-full bg-gradient-to-r from-blue-600 to-cyan-500"
+              className="mt-4 bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-4 py-2 rounded-full text-sm font-semibold"
               onClick={() => setIsOpen(false)}
             >
               Reach Us
