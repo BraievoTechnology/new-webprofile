@@ -11,21 +11,20 @@ export default function Navbar() {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <header className="w-3/4 px-4 sm:px-6 md:px-8 py-4 flex justify-between items-center bg-white relative mx-auto">
-      
+    <header className="relative flex items-center justify-between w-3/4 px-4 py-4 mx-auto bg-white sm:px-6 md:px-8">
       <img
         src="/assets/logo.png"
         alt="BraiEvo Logo"
-        className="w-20 sm:w-24 h-auto"
+        className="w-20 h-auto sm:w-24"
       />
       <div className="flex items-center gap-4 sm:gap-6 md:gap-10">
-        <div className="hidden md:flex flex-1 justify-center">
-          <nav className="flex gap-8 sm:gap-12 items-center text-gray-700 text-base font-medium font-lato">
+        <div className="justify-center flex-1 hidden md:flex">
+          <nav className="flex items-center gap-8 text-base font-medium text-gray-700 sm:gap-12 font-lato">
             {[
               { href: "/", label: "Home" },
-              { href: "/about", label: "About" },
+              { href: "/pages/AboutSection", label: "About" },
               { href: "/portfolio", label: "Portfolio" },
-              { href: "/careers", label: "Careers" },
+              { href: "/pages/CareerSection", label: "Careers" },
               { href: "/blog", label: "Blog" },
             ].map(({ href, label }) => (
               <Link
@@ -63,54 +62,54 @@ export default function Navbar() {
       </button>
 
       {/* Fullscreen mobile dropdown menu */}
-{isOpen && (
-  <div className="fixed top-0 left-0 w-full h-screen bg-white shadow-md flex flex-col items-center px-6 py-8 z-50">
-    
-    {/* Close Button */}
-    <button
-      onClick={() => setIsOpen(false)}
-      className="absolute top-6 right-8 text-gray-700 text-3xl focus:outline-none"
-      aria-label="Close Menu"
-    >
-      &times;
-    </button>
+      {isOpen && (
+        <div className="fixed top-0 left-0 z-50 flex flex-col items-center w-full h-screen px-6 py-8 bg-white shadow-md">
+          {/* Close Button */}
+          <button
+            onClick={() => setIsOpen(false)}
+            className="absolute text-3xl text-gray-700 top-6 right-8 focus:outline-none"
+            aria-label="Close Menu"
+          >
+            &times;
+          </button>
 
-    <div className="mt-16 flex flex-col gap-8 items-center w-full">
-      {[
-        { href: "/", label: "Home" },
-        { href: "/about", label: "About" },
-        { href: "/portfolio", label: "Portfolio" },
-        { href: "/careers", label: "Careers" },
-        { href: "/blog", label: "Blog" },
-      ].map(({ href, label }) => (
-        <Link
-          key={href}
-          href={href}
-          onClick={() => setIsOpen(false)}
-          className={`text-2xl font-medium ${
-            isActive(href) ? "text-blue-700" : "text-gray-800 hover:underline"
-          }`}
-        >
-          <div className="flex flex-col items-center">
-            <span>{label}</span>
-            {isActive(href) && (
-              <span className="w-1 h-1 mt-1 bg-blue-700 rounded-full" />
-            )}
+          <div className="flex flex-col items-center w-full gap-8 mt-16">
+            {[
+              { href: "/", label: "Home" },
+              { href: "/about", label: "About" },
+              { href: "/portfolio", label: "Portfolio" },
+              { href: "/careers", label: "Careers" },
+              { href: "/blog", label: "Blog" },
+            ].map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                onClick={() => setIsOpen(false)}
+                className={`text-2xl font-medium ${
+                  isActive(href)
+                    ? "text-blue-700"
+                    : "text-gray-800 hover:underline"
+                }`}
+              >
+                <div className="flex flex-col items-center">
+                  <span>{label}</span>
+                  {isActive(href) && (
+                    <span className="w-1 h-1 mt-1 bg-blue-700 rounded-full" />
+                  )}
+                </div>
+              </Link>
+            ))}
+
+            <Link
+              href="/contact"
+              className="px-4 py-2 mt-4 text-sm font-semibold text-white rounded-full bg-gradient-to-r from-blue-600 to-cyan-500"
+              onClick={() => setIsOpen(false)}
+            >
+              Reach Us
+            </Link>
           </div>
-        </Link>
-      ))}
-
-      <Link
-        href="/contact"
-        className="mt-4 bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-4 py-2 rounded-full text-sm font-semibold"
-        onClick={() => setIsOpen(false)}
-      >
-        Reach Us
-      </Link>
-    </div>
-  </div>
-)}
-
+        </div>
+      )}
     </header>
   );
 }
