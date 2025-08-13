@@ -23,15 +23,15 @@ export const TeamMemberCard: React.FC<{ member: TeamMember }> = ({
   const [showSocials, setShowSocials] = useState(false);
 
   return (
-    <div className="bg-white rounded-3xl p-4 text-center relative group">
-      <div className="overflow-hidden rounded-2xl -mb-2 relative">
+    <div className="relative p-4 text-center bg-white rounded-3xl group">
+      <div className="relative -mb-2 overflow-hidden rounded-2xl">
         <img
           src={member.imageUrl}
           alt={member.name}
-          className="w-full h-auto object-cover rounded-2xl"
+          className="object-cover w-full h-auto rounded-2xl"
         />
 
-        {member.socials?.length > 0 && (
+        {member.socials && member.socials.length > 0 && (
           <div
             // className="absolute flex -bottom-18 right-5"
             className="flex justify-end -mt-8 -mr-20"
@@ -66,7 +66,7 @@ export const TeamMemberCard: React.FC<{ member: TeamMember }> = ({
                   <IconButton
                     key={idx}
                     icon={
-                      <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                      <div className="flex items-center justify-center w-8 h-8 bg-white rounded-full">
                         <Icon className="text-[#273B84] w-5 h-5" />
                       </div>
                     }
