@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.12",
     "@react-google-maps/api": "^2.20.7",
     "framer-motion": "^12.23.12",
     "gsap": "^3.13.0",

@@ -18,9 +18,9 @@ export default function MapComponent() {
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "",
   });
 
-  const mapRef = useRef(null);
+  const mapRef = useRef<google.maps.Map | null>(null);
 
-  const onLoad = useCallback((map: any) => {
+  const onLoad = useCallback((map: google.maps.Map) => {
     mapRef.current = map;
   }, []);
 

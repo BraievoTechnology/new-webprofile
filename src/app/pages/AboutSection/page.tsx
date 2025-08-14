@@ -113,9 +113,9 @@ function AboutSection() {
       imageUrl:
         "https://shinemd.com/wp-content/uploads/2022/05/Treatments-For-Men-1.jpg",
       socials: [
-        { platform: "instagram", url: "https://instagram.com" },
-        { platform: "linkedin", url: "https://linkedin.com" },
-        { platform: "facebook", url: "https://facebook.com" },
+        { platform: "instagram", url: "https://instagram.com" } as const,
+        { platform: "linkedin", url: "https://linkedin.com" } as const,
+        { platform: "facebook", url: "https://facebook.com" } as const,
       ],
     },
     {
@@ -124,9 +124,9 @@ function AboutSection() {
       imageUrl:
         "https://shinemd.com/wp-content/uploads/2022/05/Treatments-For-Men-1.jpg",
       socials: [
-        { platform: "instagram", url: "https://instagram.com" },
-        { platform: "linkedin", url: "https://linkedin.com" },
-        { platform: "facebook", url: "https://facebook.com" },
+        { platform: "instagram", url: "https://instagram.com" } as const,
+        { platform: "linkedin", url: "https://linkedin.com" } as const,
+        { platform: "facebook", url: "https://facebook.com" } as const,
       ],
     },
     {
@@ -135,9 +135,9 @@ function AboutSection() {
       imageUrl:
         "https://shinemd.com/wp-content/uploads/2022/05/Treatments-For-Men-1.jpg",
       socials: [
-        { platform: "instagram", url: "https://instagram.com" },
-        { platform: "linkedin", url: "https://linkedin.com" },
-        { platform: "facebook", url: "https://facebook.com" },
+        { platform: "instagram", url: "https://instagram.com" } as const,
+        { platform: "linkedin", url: "https://linkedin.com" } as const,
+        { platform: "facebook", url: "https://facebook.com" } as const,
       ],
     },
     {
@@ -146,9 +146,9 @@ function AboutSection() {
       imageUrl:
         "https://shinemd.com/wp-content/uploads/2022/05/Treatments-For-Men-1.jpg",
       socials: [
-        { platform: "instagram", url: "https://instagram.com" },
-        { platform: "linkedin", url: "https://linkedin.com" },
-        { platform: "facebook", url: "https://facebook.com" },
+        { platform: "instagram", url: "https://instagram.com" } as const,
+        { platform: "linkedin", url: "https://linkedin.com" } as const,
+        { platform: "facebook", url: "https://facebook.com" } as const,
       ],
     },
     {
@@ -157,9 +157,9 @@ function AboutSection() {
       imageUrl:
         "https://shinemd.com/wp-content/uploads/2022/05/Treatments-For-Men-1.jpg",
       socials: [
-        { platform: "instagram", url: "https://instagram.com" },
-        { platform: "linkedin", url: "https://linkedin.com" },
-        { platform: "facebook", url: "https://facebook.com" },
+        { platform: "instagram", url: "https://instagram.com" } as const,
+        { platform: "linkedin", url: "https://linkedin.com" } as const,
+        { platform: "facebook", url: "https://facebook.com" } as const,
       ],
     },
     {
@@ -168,9 +168,9 @@ function AboutSection() {
       imageUrl:
         "https://shinemd.com/wp-content/uploads/2022/05/Treatments-For-Men-1.jpg",
       socials: [
-        { platform: "instagram", url: "https://instagram.com" },
-        { platform: "linkedin", url: "https://linkedin.com" },
-        { platform: "facebook", url: "https://facebook.com" },
+        { platform: "instagram", url: "https://instagram.com" } as const,
+        { platform: "linkedin", url: "https://linkedin.com" } as const,
+        { platform: "facebook", url: "https://facebook.com" } as const,
       ],
     },
   ];
